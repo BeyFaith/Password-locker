@@ -8,7 +8,7 @@ class User:
 
     create_account = []
 
-    def __init__(self,first_name,last_name,user_name,password):
+    def __init__(self,first_name,last_name,email,password):
 
         """
         Define properties for my object.
