@@ -6,7 +6,7 @@ class User:
 
     """
 
-    create_account = []
+    user_list = []
 
     def __init__(self,first_name,last_name,email,password):
 
@@ -19,3 +19,6 @@ class User:
         self.last_name = last_name
         self.email = email
         self.password = password
+
+    def save_user(self):
+        User.user_list.append(self)
