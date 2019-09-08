@@ -21,4 +21,16 @@ class User:
         self.password = password
 
     def save_user(self):
+
+        '''
+        method to save user.
+        '''
+
         User.user_list.append(self)
+
+    def delete_user(self):
+        
+        '''
+        method to delete a saved user.
+        '''
+        User.user_list.remove(self)

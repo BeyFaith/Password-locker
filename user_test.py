@@ -32,7 +32,7 @@ class TestUser(unittest.TestCase):
         '''
 
         self.new_user.save_user()
-        self.assertEqual(len(User.user_list),1)
+        self.assertEqual(len(User.user_list),2)
 
 
     def tearDown(self):
@@ -54,6 +54,15 @@ class TestUser(unittest.TestCase):
         test_user.save_user()
         self.new_user.delete_user()
         self.assertEqual(len(User.user_list),1)
+
+
+    def test_display_user(self):
+
+        '''
+        Test to display users
+        '''
+        
+        self.asserEqual(User.display_users(),User.user_list)
         
 
 if __name__ == '__main__':
