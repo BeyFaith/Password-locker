@@ -41,8 +41,19 @@ class TestUser(unittest.TestCase):
         this method cleans up after eachtestcase has run.
 
         '''
-        
+
         User.userlist = []
+
+    def test_delete_user(self):
+        '''
+        test to delete user.
+        '''
+
+        self.new_user.save_user()
+        test_user = User("Ismail","Ryumugabe","ir@gmail.com","hello")
+        test_user.save_user()
+        self.new_user.delete_user()
+        self.assertEqual(len(User.user_list),1)
         
 
 if __name__ == '__main__':
