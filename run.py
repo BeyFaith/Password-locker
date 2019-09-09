@@ -133,3 +133,10 @@ def main():
         else:
             print("-" * 156)
             print(" ")
+            print("  retry!")
+            print(" ")
+            print("   Please select one of the available options.")
+            print(" ")
+
+if __name__ == '__main__':
+    main()           
