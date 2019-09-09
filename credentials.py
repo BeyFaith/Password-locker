@@ -31,3 +31,12 @@ class Info:
         '''
 
         Info.info_list.remove(self)
+
+    @classmethod
+    def display_info(cls):
+
+        '''
+        class method that works through ut the whole class to display info.
+        '''
+
+        return cls.info_list

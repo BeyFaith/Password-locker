@@ -37,5 +37,8 @@ class TestInfo(unittest.TestCase):
         test_info.delete_info()
         self.assertEqual(len(Info.info_list),1)
 
+    def test_display_creds(self):
+        self.assertEqual(Info.display_info(),Info.info_list)    
+
 if __name__ == '__main__':
     unittest.main()     
