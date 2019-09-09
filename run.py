@@ -3,7 +3,7 @@
 from user import User
 from credentials import Info
 
-def create_account(first_name,last-name,email):
+def create_account(first_name,last_name,email):
     '''
     function to create new account user
     '''
@@ -50,7 +50,7 @@ def  display_creds():
 
 def main():
     print("Hello welcome to your password-locker app.")
-    print('/n')    
+    #print('/n')    
     
     while True:
         print("-" * 156)
@@ -59,7 +59,7 @@ def main():
         print("  Type in a short code!")
         print(" ")
 
-        short_code = input().lowe()
+        short_code = input().lower()
         if short_code =='cc':
             print(" ")
             print("-" * 156)
@@ -116,7 +116,7 @@ def main():
             print(" ")
             print("To generate password add in your first name and facebook below.")
             print(" ")
-            list_of_inputs = [cfor c in input()]
+            list_of_inputs = [c for c in input()]
             list_of_inputs.reverse()
             print(list_of_inputs)
 
