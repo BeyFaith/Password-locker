@@ -1,3 +1,5 @@
+global users_list
+
 class User:
 
     """
@@ -6,9 +8,9 @@ class User:
 
     """
 
-    user_list = []
+    users_list = []
 
-    def __init__(self,first_name,last_name,email,password):
+    def __init__(self,first_name,last_name,password):
 
         """
         Define properties for my object.
@@ -17,24 +19,16 @@ class User:
 
         self.first_name = first_name
         self.last_name = last_name
-        self.email = email
         self.password = password
 
     def save_user(self):
 
         '''
-        method to save user.
+        method to save new user.
         '''
 
-        User.user_list.append(self)
+        User.users_list.append(self)
 
-    def delete_user(self):
-        
-        '''
-        method to delete a saved user.
-        '''
-        User.user_list.remove(self)
-
-    @classmethod
-    def display_users(cls):
-        return cls.user_list
+class Credential:
+    
+       

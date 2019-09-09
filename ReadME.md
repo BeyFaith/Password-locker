@@ -43,4 +43,8 @@ Python
 
 For any inquiries or comments please reach out to me on: fryumugabe@gmail.com
 
+### License
 
+MIT License
+
+COpyright (c) 2019 Moringa School
