@@ -111,5 +111,25 @@ def main():
                 print(" ")
 
 
-        elif short
+        elif short_code == 'gs':
+            print(" ")
+            print(" ")
+            print("To generate password add in your first name and facebook below.")
+            print(" ")
+            list_of_inputs = [cfor c in input()]
+            list_of_inputs.reverse()
+            print(list_of_inputs)
 
+
+        elif short-code == "ex":
+            print("-" * 156)
+            print(" ")
+            print("Thanks for usingpassword-locker!")
+            print("Bye!!!")
+            print(" ")
+            print("-" * 156)
+            break
+
+        else:
+            print("-" * 156)
+            print(" ")
