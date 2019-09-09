@@ -23,3 +23,11 @@ class Info:
 
         '''
         Info .info_list.append(self)
+
+    def delete_info(self):
+
+        '''
+        function added to delete credentials
+        '''
+
+        Info.info_list.remove(self)
