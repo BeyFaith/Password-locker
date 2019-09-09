@@ -80,4 +80,32 @@ class Credential:
         return gen_pass
 
     @classmethod
-    defd    
+    def display_credentials(cls,user_name)
+        '''
+        method that will display credentials'list
+        '''
+        user_credentials_list = []
+        for credential in cls.credentials_list:
+            if credential.user_name == user_name:
+                user_credentials_list.append(credential)
+
+        return user_credentials_list
+
+
+    @classmethod
+    def find_by_site_name(cls,site_name):
+        '''
+        method that returns a site name that matches a credential.
+        '''
+        for credential in cls.credentials_list:
+            if credential.site_name == site_name:
+                return credential
+
+
+    @classmethod
+    def copy_credential(cls,site_name):
+        '''
+        method that copies credential's info
+        '''
+        find_credential = Credential.find_by_site(site_name)
+        return pyperclip.copy(find_credential.password)       
