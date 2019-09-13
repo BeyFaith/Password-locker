@@ -65,7 +65,14 @@ class Credential:
 
 	@classmethod
 	def display_credentials(cls,user_name):
-		
+		'''
+		Class method to display the list of credentials saved
+		'''
+		user_credentials_list = []
+		for credential in cls.credentials_list:
+			if credential.user_name == user_name:
+				user_credentials_list.append(credential)
+		return user_credentials_list
 				
 	@classmethod
 	def find_by_site_name(cls, site_name):
