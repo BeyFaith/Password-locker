@@ -100,7 +100,7 @@ class TestCredentials(unittest.TestCase):
 		Test to check if the find_by_site_name method returns the correct credential
 		'''
 		self.new_credential.save_credentials()
-		twitter = Credential('agnes','twitter','aggy','123')
+		twitter = Credential('bey','twitter','bey_faith','123')
 		twitter.save_credentials()
 		credential_exists = Credential.find_by_site_name('Twitter')
 		self.assertEqual(credential_exists,twitter)
