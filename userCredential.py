@@ -57,7 +57,11 @@ class Credential:
 		Credential.credentials_list.append(self)
 	
 	def generate_password(size=8, char=string.ascii_uppercase+string.ascii_lowercase+string.digits):
-		
+		'''
+		Function to generate an 8 character password for a credential
+		'''
+		gen_pass=''.join(random.choice(char) for x in range(size))
+		return gen_pass
 
 	@classmethod
 	def display_credentials(cls,user_name):
@@ -72,12 +76,7 @@ class Credential:
 				
 	@classmethod
 	def find_by_site_name(cls, site_name):
-		'''
-		Method that takes in a site_name and returns a credential that matches that site_name.
-		'''
-		for credential in cls.credentials_list:
-			if credential.site_name == site_name:
-				return credential
+		
 
 	@classmethod
 	def copy_credential(cls,site_name):
