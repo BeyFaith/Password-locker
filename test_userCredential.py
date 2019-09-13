@@ -73,7 +73,7 @@ class TestCredentials(unittest.TestCase):
 		Test to check if the new credential info is saved into the credentials list
 		'''
 		self.new_credential.save_credentials()
-		twitter = Credential('agnes','instagram','aggy','123')
+		twitter = Credential('bey','instagram','faith','123')
 		twitter.save_credentials()
 		self.assertEqual(len(Credential.credentials_list),2)
 
