@@ -51,13 +51,13 @@ class Credential:
 		self.password = password
 
 	def save_credentials(self):
-		
+		'''
+		Function to save a newly created user instance
+		'''
+		Credential.credentials_list.append(self)
+	
 	def generate_password(size=8, char=string.ascii_uppercase+string.ascii_lowercase+string.digits):
-		'''
-		Function to generate an 8 character password for a credential
-		'''
-		gen_pass=''.join(random.choice(char) for x in range(size))
-		return gen_pass
+		
 
 	@classmethod
 	def display_credentials(cls,user_name):
